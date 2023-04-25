@@ -1,1 +1,1 @@
-export class Manager {}
+export class Manager {};

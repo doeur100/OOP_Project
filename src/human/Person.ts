@@ -1,1 +1,1 @@
-export class Person{}
+export class Person{};
