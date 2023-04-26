@@ -1,4 +1,4 @@
-import { Manager } from "../../Manager";
+import { Manager } from "../Manager";
 
 export class Flight_attendant extends Manager{
     constructor(salary: number, first_name: string, last_name: string, age: number){

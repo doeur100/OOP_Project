@@ -1,3 +1,7 @@
+export enum Gender {
+    MALE,
+    FEMALE,
+};
 export abstract class Person{
     private first_name: string;
     private last_name: string;

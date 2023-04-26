@@ -1,3 +1,7 @@
+export enum TypeOfSeat{
+    BUSSINESS,
+    ECONOMY,
+}
 export class Seat {
     private seat_number: string;
     private price: number;
