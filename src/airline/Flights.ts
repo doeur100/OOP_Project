@@ -7,8 +7,10 @@ import { Aeroplane } from "./Aeroplane";
 import { Ticket } from "./Ticket";
 
 export class Flights {
-    private date: string;
-    private time: string;
+    private date_deporture: string;
+    private date_arrival: string;
+    private time_deporture: string;
+    private time_arrival: string;
     private flight_number: string;
 
     public route:Route;
@@ -18,12 +20,21 @@ export class Flights {
     public flight_attendant: Flight_attendant[] = [];
     public pilots: Pilot[] = [];
     public chefs: Chef[] = [];
-    constructor(date: string, time: string, flight_number: string,route:Route,aeroplane:Aeroplane){
-        this.date = date;
-        this.time = time;
-        this.flight_number = flight_number;
-        this.route = route;
-        this.aeroplane = aeroplane;
+    constructor(
+        date_deporture: string, 
+        date_arrival: string, 
+        time_deporture: string, 
+        time_arrival: string, 
+        flight_number: string,
+        route:Route,
+        aeroplane:Aeroplane){
+            this.date_deporture = date_deporture;
+            this.date_arrival = date_arrival;
+            this.time_deporture = time_deporture;
+            this.time_arrival = time_arrival;
+            this.flight_number = flight_number;
+            this.route = route;
+            this.aeroplane = aeroplane;
     }
     addPerson(passengers: Passenger){
         this.passengers.push(passengers);
