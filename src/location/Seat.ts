@@ -10,9 +10,12 @@ export class Seat {
 
     private typeof_seat: TypeOfSeat;
     passenger: Passenger;
-    constructor(seat_number: string, price: number, passenger: Passenger){
-        this.seat_number = seat_number;
-        this.price = price;
-        this.passenger = passenger;
+    constructor(
+        seat_number: string, 
+        price: number, 
+        passenger: Passenger){
+            this.seat_number = seat_number;
+            this.price = price;
+            this.passenger = passenger;
     }
 };
