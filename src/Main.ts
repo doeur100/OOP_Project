@@ -1,3 +1,4 @@
+
 import {Bag} from "./bag/Bag";
 import {Passenger} from "./human/passenger/Passenger";
 import { Gender } from "./human/Person";
@@ -37,7 +38,5 @@ flight1.addChef(chef1);
 flight1.addFlightAttendant(flight_attendant1);
 flight1.addPerson(passenger1);
 flight1.addPilot(pilot1);
-
 console.log(flight1);
-
 
