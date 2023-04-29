@@ -19,10 +19,11 @@ exports.Passenger = void 0;
 var Person_1 = require("../Person");
 var Passenger = /** @class */ (function (_super) {
     __extends(Passenger, _super);
-    function Passenger(first_name, last_name, age, gender, bag) {
+    function Passenger(first_name, last_name, age, gender, bag, gate) {
         var _this = _super.call(this, first_name, last_name, age, gender) || this;
         _this.meals = [];
         _this.bag = bag;
+        _this.gate = gate;
         return _this;
     }
     Passenger.prototype.addMeal = function (meal) {

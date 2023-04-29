@@ -2,12 +2,13 @@ import { Seat } from "../location/Seat";
 
 export class Aeroplane {
     private registration: string;
-
-    protected seats: Seat;
+    protected seats: Seat[] = [];
     constructor(
-        registration: string, 
-        seats: Seat){
+        registration: string){
             this.registration = registration;
-            this.seats = seats;
+    }
+    //Add seats to Aeropoane
+    addSeat(seat:Seat){
+        this.seats.push(seat);
     }
 };

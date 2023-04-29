@@ -14,7 +14,6 @@ var Person = /** @class */ (function () {
         this.age = age;
         this.gender = gender;
     }
-    Person.prototype.addPerson = function () { };
     return Person;
 }());
 exports.Person = Person;

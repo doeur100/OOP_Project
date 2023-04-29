@@ -1,8 +1,25 @@
-import { Ticket } from "./Ticket";
+import { Flights} from "./Flights";
 
+export enum TypeOfBooking {
+    RETURN,
+    UNRETURN,
+};
 export class Booking {
-    private ticket:Ticket;
-    constructor(ticket:Ticket){
-        this.ticket = ticket;
+    private referenceNumber:string;
+    public flight:Flights;
+    public typeOfBooking:TypeOfBooking;
+    constructor(
+        flight:Flights,
+        referenceNumber:string,
+        typeOfBooking:TypeOfBooking){
+            this.flight = flight;
+            this.referenceNumber = referenceNumber;
+            this.typeOfBooking = typeOfBooking;
     }
-}
+    //get full information
+    getInformationPassenger(referenceNumber:string){
+        if(referenceNumber === this.referenceNumber) {
+            return this.flight;
+        }
+    };
+};

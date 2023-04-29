@@ -1,6 +1,5 @@
 import { Manager } from "../Manager";
 import { Gender } from "../Person";
-
 export class Flight_attendant extends Manager{
     constructor(
         salary: number, 

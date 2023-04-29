@@ -17,5 +17,4 @@ export abstract class Person{
             this.age = age;
             this.gender = gender;
     }
-    addPerson(){}
 };
